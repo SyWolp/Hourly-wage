@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시급 계산기</title>
+  <link rel="stylesheet" href="./salaryCalculator.css">
+  <style>
+    @font-face {
+    font-family: 'CBNUJIKJI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  font-family: 'CBNUJIKJI';
+}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="Calculator">
+      <div class="MoneyBox">
+      <input class="inputMoney" type="text" value="9160" placeholder="원"><span class="won">원</span>
+      </div>
+      <div class="timeBox">
+      <span class="time">근무시간</span><input class="inputTime" type="number" placeholder="24시간">
+      <span class="weeklyTime">근무일수</span><input class="inputWeeklyTime" type="number" placeholder="7일">
+      </div>
+      <select name="changeMoney" id="changeMoney" class="changeMoney">
+        <option class="paySelect" value="weeklyPay">주급</option>
+        <option class="paySelect" value="salaryPay">월급</option>
+        <option class="paySelect" value="AnnualPay">연봉</option>
+      </select>
+      <div class="resultButton">계산</div>
+      <div class="resultBox">
+      <div class="noWeekly reBox">주휴수당 미포함<input class="resultOne resultPay" type="text" readonly></div>
+      <div class="yesWeekly reBox">주휴수당 포함<input class="resultTwo resultPay" type="text" readonly></div>
+      <div class="fourIn reBox">4대보험 가입 시<input class="resultThree resultPay" type="text" readonly></div>
+    </div>
+    </div>
+  </div>
+  <script src="./salaryCalculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0; font-size: 10px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }}
+
+.wrap{
+  border-radius: 5rem;
+  box-shadow: 0.15rem 0.15rem 0.5rem gray;
+  margin: 12.5rem auto;
+  background: {
+    color: RGB(222, 180, 138);
+  };
+  width: 100rem;
+  height: 70rem;
+  .Calculator{
+    background: {
+      color: RGB(231, 231, 229);
+    };
+    text-align: center;
+    transform: translate(0px, 7.5rem);
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 5rem;
+    .MoneyBox{
+      display: flex;
+      width: 33%;
+      height: 20rem;
+      display: inline-block;
+      line-height: 20rem;
+      .inputMoney{
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding-right: 2rem;
+        text-align: right;
+      }
+      .won{
+        padding-left: 1rem;
+        display: inline-block;
+        font-size: 3rem;
+      }
+    }
+    .timeBox{
+      display: flex;
+      height: 20rem;
+      display: inline-block;
+      line-height: 20rem;
+      .inputTime{
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        width: 8rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding-right: 2rem;
+        text-align: right;
+      }
+      .time{
+        text-align: left;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 3rem;
+      }
+      .inputWeeklyTime{
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        width: 8rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding-right: 2rem;
+        text-align: right;
+        margin-right: 3rem;
+      }
+      .weeklyTime{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 3rem;
+      }
+    }
+    .changeMoney{
+      transform: translate(0,-11rem);
+      margin: 10rem;
+      display: inline-block;
+      text-align: center;
+      font-size: 2rem;
+      width: 20%;
+      option {
+        font-size: 2rem;
+      }
+    }
+    .resultButton{
+      color: white;
+      background-color: rgb(54, 53, 53);
+      border-radius: 50%;
+      display: inline-block;
+      width: 7rem;
+      height: 7rem;
+      text-align: center;
+      font-size: 3rem;
+      transform: translate(-6rem,-10rem);
+      line-height: 7.5rem;
+      cursor: pointer;
+    }
+    .resultButton:hover{
+      box-shadow: inset 0 0 0.5rem 0.7rem rgb(0, 0, 0);
+    }
+    .result{
+      margin: 10rem auto;
+      width: 50rem;
+      height: 30rem;
+      line-height: 30rem;
+      font-size: 3rem;
+    }
+  }
+  .resultBox{
+    transform: translate(2rem,-5rem);
+    .reBox{
+      margin-top: 2rem;
+      text-align: left;
+      font-size: 3rem;
+      width: 100%;
+      height: 3rem;
+      input{
+        padding-left: 1rem;
+        transform: translate(0,-0.5rem);
+        width: 50%;
+        height: 80%;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+      }
+      .resultOne{
+        margin-left: 2.95rem;
+      }
+      .resultTwo{
+        margin-left: 5.6rem;
+      }
+      .resultThree{
+        margin-left: 3.1rem;
+      }
+    }
+  }
+}
